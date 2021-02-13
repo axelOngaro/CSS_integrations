@@ -13,21 +13,41 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.5rem;
+}
+
+.home .card1,
+.home .card2 {
+  width: 40%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 5px 5px 15px #161616;
+          box-shadow: 5px 5px 15px #161616;
+  padding: 20px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 25px;
+}
+
+.home .card1:hover,
+.home .card2:hover {
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  cursor: pointer;
 }
 
 .card1 {
   background-color: #de521f;
-  width: 25%;
-  height: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -35,26 +55,10 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-right: 10px;
-  padding-top: 10px;
-  -webkit-box-shadow: 5px 5px 20px #161616;
-          box-shadow: 5px 5px 20px #161616;
 }
 
 .card2 {
   background-color: white;
-  width: 25%;
-  height: 25%;
-  -webkit-box-shadow: 5px 5px 20px #161616;
-          box-shadow: 5px 5px 20px #161616;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
